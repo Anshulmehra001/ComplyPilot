@@ -1,6 +1,8 @@
 # 🚀 ComplyPilot V1.0 – AI-Powered Compliance Co-Pilot  
 *Compliance-as-a-Service (CaaS) for Indian SME Stockbrokers*
 
+
+
 ## 🎯 1. Context & Vision  
 - **Problem:** SME stockbrokers lack real-time surveillance and rely on manual processes—risking regulatory non-compliance.  
 - **Solution:** ComplyPilot provides live monitoring, AI-guided compliance analysis, and centralized tools.
@@ -42,7 +44,22 @@
 | AI Layer            | LLaMA 3 (via LM Studio, local model inference)      |
 | Authentication      | JWT tokens and Passlib for secure password hashing  |
 
+### 📸 Screenshots
+
+Here is the main dashboard of ComplyPilot.
+
+![ComplyPilot Live Surveillance Dashboard](./docs/images/dashboard.png)
+
+The AI Co-Pilot provides instant analysis and clear next steps.
+
+![AI Co-Pilot generating compliance advice](./docs/images/ai_copilot.png)
+
+The dynamic Rule Engine allows compliance officers to customize the AI's logic by activating or deactivating rules instantly.
+
+![alt text](./docs/images/rule_engine.png)
+
 ---
+
 
 ## 🚀 4. Quick Start Guide  
 
@@ -54,7 +71,7 @@
 
 ### 🧱 Step 1: Clone & Navigate  
 ```bash
-git clone <your-repo-url> complypilot
+git clone https://github.com/Anshulmehra001/ComplyPilot.git
 cd complypilot
 🐍 Step 2: Backend Setup (Terminal 1)
 bash
