@@ -68,30 +68,41 @@ The dynamic Rule Engine allows compliance officers to customize the AI's logic b
 - Node.js v18+  
 - Git  
 - LM Studio with LLaMA-3 model (downloaded and ready)
-```bash
-### 🧱 Step 1: Clone & Navigate  
 
+### 🧱 Step 1: Clone & Navigate  
+```bash
 git clone https://github.com/Anshulmehra001/ComplyPilot.git
 cd complypilot
+```
 🐍 Step 2: Backend Setup (Terminal 1)
-bash
+```bash
 Copy code
 cd backend
 python -m venv venv
+```
 # On Windows:
+```
 .\venv\Scripts\activate
+```
 # On macOS/Linux:
+```
 source venv/bin/activate
+```
+```
 pip install -r requirements.txt
 alembic upgrade head
 uvicorn main:app --reload
+```
 🌐 Step 3: Frontend Setup (Terminal 2)
+```
 bash
 Copy code
 cd ../frontend
 npm install
 npm start
+```
 ➕ Additional Frontend Dependencies (Terminal 2)
+```
 bash
 Copy code
 npm install @mui/material @emotion/react @emotion/styled @mui/icons-material react-router-dom axios react-markdown
@@ -99,24 +110,26 @@ This installs Material-UI core, emotion styling dependencies (required by the de
 MUI
 npm
 .
+```
 
 🧠 Step 4: Start AI & Initialize Mock Data (Terminal 3)
 Open LM Studio, select your LLaMA-3 model, and click Start Server
 
 In a new terminal, run:
-
+```
 powershell
 Copy code
 Invoke-RestMethod -Method Post -Uri http://localhost:8000/api/setup/init
 Close when setup completes successfully
-
+```
 🔐 Step 5: Log In
+```
 Visit: http://localhost:3000
 
 Email: admin@complypilot.com
 
 Password: password
-
+```
 🛠️ 5. Troubleshooting Tips
 uvicorn not recognized:
 Ensure the virtual environment is activated and rerun pip install -r requirements.txt
@@ -129,4 +142,10 @@ Stop npm start, rerun npm install, then restart
 
 /api/setup/init returns “Not Found”:
 Verify backend is running and you’re in the correct directory
+
+---
+
+ComplyPilot V1.0 – AI-Powered Compliance Co-Pilot 
+
+© 2025 Aniket Mehra & Yishu Bhaskar. All Rights Reserved.
 
