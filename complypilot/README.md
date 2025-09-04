@@ -68,9 +68,9 @@ The dynamic Rule Engine allows compliance officers to customize the AI's logic b
 - Node.js v18+  
 - Git  
 - LM Studio with LLaMA-3 model (downloaded and ready)
-
-### 🧱 Step 1: Clone & Navigate  
 ```bash
+### 🧱 Step 1: Clone & Navigate  
+
 git clone https://github.com/Anshulmehra001/ComplyPilot.git
 cd complypilot
 🐍 Step 2: Backend Setup (Terminal 1)
